@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faizan Lal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <a href="#home" class="logo">Faizan Lal</a>
+          <nav class="nav-desktop">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#" class="nav-link resume-btn" id="viewResume"
+              >View Resume</a
+            >
+          </nav>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="container">
+        <nav class="nav-mobile">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#" class="nav-link" id="viewResumeMobile">View Resume</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal" aria-hidden="true">
+      <div class="modal-content" tabindex="-1">
+        <span class="close-modal" aria-label="Close modal">&times;</span>
+        <div class="pdf-container">
+          <iframe
+            id="resumePdf"
+            src="about:blank"
+            title="Resume PDF"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge">Computer Engineer</div>
+          <h1 class="hero-title">
+            <span class="title-highlight">Faizan Lal</span>
+          </h1>
+          <p class="hero-subtitle">
+            UI/UX Designer & Digital Marketer with a passion for creating
+            exceptional digital experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">My Profile</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-card main-card">
+            <h3 class="about-subtitle">Professional Summary</h3>
+            <p>
+              Recently completed Computer Engineering with a passion for UI/UX
+              design. Skilled in SEO, Figma, and Canva. Proficient in Microsoft
+              applications, with a detail-oriented and creative approach.
+            </p>
+            <p>
+              My journey in the tech world has equipped me with a unique blend
+              of technical knowledge and creative skills. I bring fresh
+              perspectives and innovative ideas to every project, allowing me to
+              create visually appealing and user-friendly designs.
+            </p>
+            <p>
+              Experienced in accurate data management and maintaining organized
+              records. Eager to contribute fresh ideas and collaborate with
+              dynamic teams to create impactful digital solutions.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3 class="card-title">Core Competencies</h3>
+              <div class="competencies-grid">
+                <div class="competency-item purple">
+                  <i class="fas fa-paint-brush"></i>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="competency-item pink">
+                  <i class="fas fa-bullhorn"></i>
+                  <span>Digital Marketing</span>
+                </div>
+                <div class="competency-item blue">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Microsoft Office</span>
+                </div>
+                <div class="competency-item amber">
+                  <i class="fas fa-file-signature"></i>
+                  <span>Business Proposals</span>
+                </div>
+                <div class="competency-item green">
+                  <i class="fas fa-lightbulb"></i>
+                  <span>Problem Solving</span>
+                </div>
+                <div class="competency-item violet">
+                  <i class="fas fa-code"></i>
+                  <span>HTML/CSS</span>
+                </div>
+                <div class="competency-item cyan">
+                  <i class="fas fa-database"></i>
+                  <span>SQL</span>
+                </div>
+                <div class="competency-item rose">
+                  <i class="fab fa-figma"></i>
+                  <span>Figma</span>
+                </div>
+                <div class="competency-item emerald">
+                  <i class="fas fa-palette"></i>
+                  <span>Canva</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card">
+              <h3 class="card-title">Languages</h3>
+              <div class="languages-grid">
+                <div class="language-item">
+                  <div class="language-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="language-details">
+                    <h4>English</h4>
+                    <p>Professional</p>
+                  </div>
+                </div>
+                <div class="language-item">
+                  <div class="language-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="language-details">
+                    <h4>Hindi</h4>
+                    <p>Native</p>
+                  </div>
+                </div>
+                <div class="language-item">
+                  <div class="language-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="language-details">
+                    <h4>Gujarati</h4>
+                    <p>Native</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Work</span>
+          <h2 class="section-title">Projects</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="project-filters">
+          <button class="project-filter active" data-filter="all">All</button>
+          <button class="project-filter" data-filter="web">Web Design</button>
+          <button class="project-filter" data-filter="ui">UI/UX</button>
+          <button class="project-filter" data-filter="marketing">
+            Marketing
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card visible" data-category="web ui">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="E-commerce Website"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Website</h3>
+              <div class="project-categories">
+                <span class="project-category">Web Design</span>
+                <span class="project-category">UI/UX</span>
+              </div>
+              <p class="project-description">
+                A modern e-commerce platform with responsive design and seamless
+                user experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card visible" data-category="ui">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Mobile App Design"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Mobile App Design</h3>
+              <div class="project-categories">
+                <span class="project-category">UI/UX</span>
+              </div>
+              <p class="project-description">
+                A user-friendly mobile application interface designed for
+                optimal user engagement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card visible" data-category="marketing">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Digital Marketing Campaign"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Digital Marketing Campaign</h3>
+              <div class="project-categories">
+                <span class="project-category">Marketing</span>
+              </div>
+              <p class="project-description">
+                A comprehensive digital marketing strategy that increased client
+                engagement by 40%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card visible" data-category="web marketing">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Corporate Website"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Corporate Website</h3>
+              <div class="project-categories">
+                <span class="project-category">Web Design</span>
+                <span class="project-category">Marketing</span>
+              </div>
+              <p class="project-description">
+                A professional corporate website with integrated marketing
+                features and lead generation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card visible" data-category="ui">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Dashboard UI"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dashboard UI</h3>
+              <div class="project-categories">
+                <span class="project-category">UI/UX</span>
+              </div>
+              <p class="project-description">
+                An intuitive dashboard interface designed for data visualization
+                and analytics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card visible" data-category="marketing">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="Social Media Campaign"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View project"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a href="#" class="project-link" aria-label="View code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Social Media Campaign</h3>
+              <div class="project-categories">
+                <span class="project-category">Marketing</span>
+              </div>
+              <p class="project-description">
+                A strategic social media campaign that boosted brand awareness
+                and engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience Item 1 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Jun 2024 - Aug 2024</span>
+              </div>
+              <div class="experience-badge">Remote</div>
+            </div>
+            <h3 class="experience-title">
+              Digital Marketing and Social Media Manager Intern
+            </h3>
+            <p class="experience-company">Aarunya Community</p>
+            <ul class="experience-list">
+              <li>
+                Developed and implemented social media content strategies,
+                increasing brand awareness across Instagram and LinkedIn.
+              </li>
+              <li>
+                Created customized business proposals to drive lead generation
+                and customer acquisition.
+              </li>
+              <li>
+                Designed social media posters for Instagram and LinkedIn,
+                boosting brand recognition and engagement.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Jun 2024 - Aug 2024</span>
+              </div>
+              <div class="experience-badge">Remote</div>
+            </div>
+            <h3 class="experience-title">UI/UX Designer Intern</h3>
+            <p class="experience-company">
+              Brain Quest Consultancy and Training, Dubai UAE
+            </p>
+            <ul class="experience-list">
+              <li>
+                Designed intuitive user interfaces remotely on Wix Studio,
+                improving usability and aesthetics to enhance user engagement.
+              </li>
+              <li>
+                Delivered customized design solutions remotely, tailored to
+                client needs, applying user-centered design principles and
+                showcasing adaptability.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div class="experience-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Jan 2023 - May 2024</span>
+              </div>
+              <div class="experience-badge">Remote</div>
+            </div>
+            <h3 class="experience-title">Software and Product Tester</h3>
+            <p class="experience-company">Nothing Technology Limited</p>
+            <ul class="experience-list">
+              <li>
+                Conducted comprehensive testing on "Nothing Phone 1" devices,
+                ensuring functionality, reliability, and exceptional user
+                experience.
+              </li>
+              <li>
+                Worked closely with cross-functional teams to identify, report,
+                and resolve software bugs, contributing to overall product
+                quality improvement and end-user satisfaction.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Animated Background Elements -->
+      <div class="contact-bg-elements">
+        <div class="floating-shape shape-circle"></div>
+        <div class="floating-shape shape-square"></div>
+        <div class="floating-shape shape-triangle"></div>
+        <div class="floating-shape shape-plus"></div>
+        <div class="floating-shape shape-x"></div>
+        <div class="glow-effect glow-1"></div>
+        <div class="glow-effect glow-2"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Intro -->
+          <div class="contact-intro">
+            <h3 class="contact-intro-title">
+              Let's Create Something Amazing Together
+            </h3>
+            <p class="contact-intro-text">
+              Have a project in mind or want to discuss potential opportunities?
+              I'm always open to new ideas and collaborations.
+            </p>
+
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-card-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Email</h4>
+                  <a href="mailto:faizanlal563@gmail.com" class="contact-link">
+                    faizanlal563@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-card-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Phone</h4>
+                  <a href="tel:+919313157929" class="contact-link">
+                    +91 9313157929
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-card-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h4>Location</h4>
+                  <p>Gujarat, India</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-connect">
+              <h4 class="social-connect-title">Connect With Me</h4>
+              <div class="social-icons-wrapper">
+                <a
+                  href="https://linkedin.com/in/"
+                  target="_blank"
+                  class="social-icon-link"
+                  aria-label="LinkedIn"
+                >
+                  <div class="social-icon-animated">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://behance.net/"
+                  target="_blank"
+                  class="social-icon-link"
+                  aria-label="Behance"
+                >
+                  <div class="social-icon-animated">
+                    <i class="fab fa-behance"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  class="social-icon-link"
+                  aria-label="Instagram"
+                >
+                  <div class="social-icon-animated">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="social-icon-link"
+                  aria-label="GitHub"
+                >
+                  <div class="social-icon-animated">
+                    <i class="fab fa-github"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-card">
+              <div class="form-header">
+                <h3>Send Me a Message</h3>
+                <p>I'll get back to you as soon as possible</p>
+              </div>
+
+              <form id="contactForm" class="animated-form">
+                <div class="form-group form-group-animated">
+                  <div class="input-container">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="form-input"
+                      placeholder=" "
+                    />
+                    <label for="name" class="form-label">Your Name</label>
+                    <div class="input-border"></div>
+                    <i class="fas fa-user input-icon"></i>
+                  </div>
+                  <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group form-group-animated">
+                  <div class="input-container">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="form-input"
+                      placeholder=" "
+                    />
+                    <label for="email" class="form-label">Your Email</label>
+                    <div class="input-border"></div>
+                    <i class="fas fa-envelope input-icon"></i>
+                  </div>
+                  <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group form-group-animated">
+                  <div class="input-container">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      class="form-input"
+                      placeholder=" "
+                    />
+                    <label for="subject" class="form-label">Subject</label>
+                    <div class="input-border"></div>
+                    <i class="fas fa-heading input-icon"></i>
+                  </div>
+                  <span class="error-message" id="subjectError"></span>
+                </div>
+
+                <div class="form-group form-group-animated">
+                  <div class="input-container textarea-container">
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      class="form-textarea"
+                      placeholder=" "
+                    ></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                    <div class="input-border"></div>
+                    <i class="fas fa-comment input-icon"></i>
+                  </div>
+                  <span class="error-message" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="submit-button" id="submitButton">
+                  <span class="button-text">Send Message</span>
+                  <span class="button-icon"
+                    ><i class="fas fa-paper-plane"></i
+                  ></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Navigation</h3>
+            <div class="footer-links">
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#about" class="footer-link">About</a>
+              <a href="#projects" class="footer-link">Projects</a>
+              <a href="#experience" class="footer-link">Experience</a>
+              <a href="#contact" class="footer-link">Contact</a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Services</h3>
+            <div class="footer-links">
+              <a href="#projects" class="footer-link">UI/UX Design</a>
+              <a href="#projects" class="footer-link">Digital Marketing</a>
+              <a href="#projects" class="footer-link">Web Development</a>
+              <a href="#projects" class="footer-link">Business Proposals</a>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Connect</h3>
+            <div class="footer-links">
+              <a
+                href="https://linkedin.com/in/"
+                target="_blank"
+                class="footer-link"
+                >LinkedIn</a
+              >
+              <a href="https://behance.net/" target="_blank" class="footer-link"
+                >Behance</a
+              >
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                class="footer-link"
+                >Instagram</a
+              >
+              <a href="mailto:faizanlal563@gmail.com" class="footer-link"
+                >Email</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Large Logo -->
+        <div class="footer-logo">
+          <span>FAIZAN LAL</span>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p class="copyright">
+            © <span id="currentYear">2024</span> Faizan Lal. All rights
+            reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#" class="legal-link">Terms of Service</a>
+            <a href="#" class="legal-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal success-modal" aria-hidden="true">
+      <div class="modal-content success-modal-content" tabindex="-1">
+        <span
+          class="close-modal"
+          id="closeSuccessModal"
+          aria-label="Close modal"
+          >&times;</span
+        >
+        <div class="success-animation">
+          <svg
+            class="checkmark"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 52 52"
+          >
+            <circle
+              class="checkmark-circle"
+              cx="26"
+              cy="26"
+              r="25"
+              fill="none"
+            />
+            <path
+              class="checkmark-check"
+              fill="none"
+              d="M14.1 27.2l7.1 7.2 16.7-16.8"
+            />
+          </svg>
+        </div>
+        <h3 class="success-title">Message Sent!</h3>
+        <p class="success-message">
+          Thank you for reaching out. I'll get back to you as soon as possible.
+        </p>
+        <button class="btn-primary" id="successModalClose">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
